@@ -1,17 +1,59 @@
+import os
+
+from django.core.mail import send_mail, BadHeaderError
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
+from django.views import View
+
+from .forms import LeadForm
+
+MAIL_CLIENT = os.getenv('MAIL_CLIENT')
+
+
+from django.shortcuts import render, redirect
+from django.views import View
 from .forms import LeadForm
 
 
-def landing_page(request):
-    if request.method == 'POST':
+class CombinedView(View):
+    def get(self, request, *args, **kwargs):
+        form = LeadForm()
+        if request.path == '/contact/':
+            template = 'app/contact.html'
+            context = {
+                'form': form,
+                'title': 'Написать мне'
+            }
+        else:
+            template = 'app/home.html'
+            context = {
+                'form': form,
+            }
+        return render(request, template, context)
+
+    def post(self, request, *args, **kwargs):
         form = LeadForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('thank_you')
-    else:
-        form = LeadForm()
-    return render(request, 'app/landing_page.html', {'form': form})
+            return redirect('success')
+
+        if request.path == '/contact/':
+            template = 'app/contact.html'
+            context = {
+                'form': form,
+                'title': 'Написать мне'
+            }
+        else:
+            template = 'app/home.html'
+            context = {
+                'form': form,
+            }
+        return render(request, template, context)
 
 
-def thank_you(request):
-    return render(request, 'app/thank_you.html')
+class SuccessView(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'app/success.html', context={
+            'title': 'Спасибо'
+        })
+

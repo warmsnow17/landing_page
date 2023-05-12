@@ -1,7 +1,10 @@
 from django.urls import path
 from . import views
+from .views import CombinedView, SuccessView
 
 urlpatterns = [
-    path('', views.landing_page, name='landing_page'),
-    path('thank-you/', views.thank_you, name='thank_you'),
+    path('', CombinedView.as_view(), name='index'),
+    path('contact/', CombinedView.as_view(), name='contact'),
+    path('contact/success/', SuccessView.as_view(), name='success'),
+    path('feedback/', CombinedView.as_view(), name='feedback'),
 ]

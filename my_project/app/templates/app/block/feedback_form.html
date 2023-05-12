@@ -1,0 +1,15 @@
+<form method="post" action="{% url 'feedback' %}">
+    {% csrf_token %}
+
+    <div class="form-group">
+        <label for="name" class="form-label">Оставьте заявку прямо сейчас и получите скидку</label>
+        {{ form.name }}
+    </div>
+
+    <div class="form-group">
+        <label for="phone" class="form-label">Введите ваш номер телефона</label>
+        {{ form.phone }}
+    </div>
+
+    <button type="submit" class="btn btn-danger">Сделать заказ</button>
+</form>

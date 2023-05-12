@@ -1,0 +1,235 @@
+{% extends './base.html' %}
+{% load static %}
+{% block title %}Артикулин{% endblock %}
+
+{% block header %}
+    {% include './block/slider.html' %}
+{% endblock %}
+
+{% block separator %}
+<div class="container-fluid my-4">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="border-bottom"></div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            {% include './block/feedback_form.html' %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="page-title text-center">
+
+                        <h3 class="page-main-title mr-0">
+                    В КОМПЛЕКСНОМ ЛЕЧЕНИЕ С ARTICULIN® ВЫ ИЗБАВИТЕСЬ ОТ ТАКИХ БОЛЕЗНЕЙ, КАК:
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-6 col-lg-3 col-xl-3 features-box text-center">
+                        <div class="img-container">
+                            <img src="{% static 'img/artroz.jpg' %}" alt="Card image cap">
+                        </div>
+                    <div class="features-body">
+                        <h5 class="features-title mr-0">Артрит и артроз</h5>
+                        <p class="card-text">Симптомы включают боль и ограничение подвижности в суставах. Воспаление суставов характеризуется скованностью, отечностью, покраснением и местным увеличением температуры в области сустава. Также может отмечаться болезненность в области сустава. </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-6 col-lg-3 col-xl-3 features-box text-center">
+                                            <div class="img-container">
+                            <img src="{% static 'img/bur.jpg' %}" alt="Card image cap">
+                        </div>
+                    <div class="features-body">
+                        <h5 class="features-title mr-0">Бурсит</h5>
+                        <p class="card-text"> Воспаление слизистых (синовиальных) сумок преимущественно в области суставов. </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-6 col-lg-3 col-xl-3 features-box text-center">
+                                            <div class="img-container">
+                            <img src="{% static 'img/osteo.jpg' %}" alt="Card image cap">
+                        </div>
+                    <div class="features-body">
+                        <h5 class="features-title mr-0">Остеохондроз и остеопороз</h5>
+                        <p class="card-text">Прогрессирующий процесс, поражающий межпозвоночные диски, которые разрушаются и образовывают грыжу. Она и является наиболее частым осложнением данной болезни.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-6 col-lg-3 col-xl-3 features-box text-center">
+                                            <div class="img-container">
+                            <img src="{% static 'img/sin.jpg' %}" alt="Card image cap">
+                        </div>
+                    <div class="features-body">
+                        <h5 class="features-title mr-0">Синовит</h5>
+                        <p class="card-text">это заболевание, которое носит воспалительный характер и поражает синовиальную оболочку суставов и связок. Болезнь ограничивается пределами участка поражения и характеризуется накоплением в полости воспалительного выпада – экссудата. Синовиальная оболочка находится вокруг связок и суставов, и обеспечивает им защиту и герметичность. Она выделяет специальную смазочную жидкость, которая снижает трение и амортизацию при движении. Наиболее часто подвержены заболеванию крупные суставы. К примеру, нередко наблюдается синовит коленного сустава, тазобедренный синовит, синовит голеностопного сустава и т.д.</p>
+                    </div>
+                </div>
+            </div>
+<section class="services">
+    <div class="container-fluid custom-container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 d-flex align-items-center p-0">
+                <img src="{% static 'img/1.png' %}" class="img-fluid w-100 services-big-img" alt="services-img">
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="services-container-title">
+                    <h3 class="page-main-title mr-0">ARTICULIN® - это</h3>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 services-box pos-r">
+                        <h6 class="services-box-title mr-0">Комплексное устранение заболевания</h6>
+                        <p class="mr-0">позволяет достичь наилучших результатов и ускорить процесс выздоровления, а также уменьшить риск возникновения осложнений и повторных заболеваний.</p>
+                    </div>
+                    <div class="col-12 col-md-12 services-box pos-r">
+                        <h6 class="services-box-title mr-0">Мгновенное обезболивание</h6>
+                        <p class="mr-0">достижение состояния отсутствия боли у пациента в кратчайшие сроки</p>
+                    </div>
+                </div>
+                <div class="row services-box-bottom-border">
+                    <div class="col-12 col-md-12 services-box pos-r">
+                        <h6 class="services-box-title mr-0">Прямое воздействие на источник боли</h6>
+                        <p class="mr-0">направлен на устранение причины болевых ощущений, а не на обезболивание их симптомов. Это означает, что вместо использования анальгетиков и других обезболивающих препаратов для уменьшения боли, метод прямого воздействия на источник боли направлен на устранение причин ее возникновения.</p>
+                    </div>
+                    <div class="col-12 col-md-12 services-box pos-r">
+                        <h6 class="services-box-title mr-0">Регенерация поврежденных тканей</h6>
+                        <p class="mr-0">процесс восстановления и замены поврежденных или утраченных тканей в организме, которые способствуют росту и развитию клеток в поврежденной ткани.</p>
+</div>
+                                        <div class="col-12 col-md-12 services-box pos-r">
+                        <h6 class="services-box-title mr-0">Поддержание здоровья суставов</h6>
+                        <p class="mr-0">способствует сохранению нормальной функции и подвижности суставов, предотвращая развитие дегенеративных процессов и улучшая качество жизни.</p>
+</div>
+                                        <div class="col-12 col-md-12 services-box pos-r">
+                        <h6 class="services-box-title mr-0">Улучшение кровообращения</h6>
+                        <p class="mr-0">повышает приток крови к поврежденным тканям, обеспечивая доставку кислорода и питательных веществ, необходимых для заживления и восстановления.</p>
+</div>
+                                        <div class="col-12 col-md-12 services-box pos-r">
+                        <h6 class="services-box-title mr-0">Снижение воспаления</h6>
+                        <p class="mr-0">активные компоненты ARTICULIN® способствуют уменьшению воспалительных процессов, облегчая болевые ощущения и способствуя быстрому выздоровлению.</p>
+</div>
+                    <div class="col-12 col-md-12 services-box pos-r">
+                        <h6 class="services-box-title mr-0">Повышение иммунной защиты</h6>
+                        <p class="mr-0">укрепляет иммунную систему, помогая организму успешно справляться с инфекциями и уменьшать риск развития осложнений.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+<div class="custom-text-block">
+    <p>Сразу после использования <strong>Артикулина</strong> вы можете избавиться от болей в ногах, в том числе от судороги в икрах. А при заболеваниях, до 94,9% респондентов перестали страдать от болей в суставах через несколько минут после употребления препарата. У всех кто употреблял препарат красивая и здоровая кожа. За счет эффективности коллагена. Делает кожу упругой и эластичной, снимает боль и скованность в мышцах и суставах. <strong>Реакция респондентов была положительной.</strong> Они с облегчением констатировали, что постоянная боль в суставах, позвоночнике, мышцах головы и внутренних органах исчезла. и не возвращается, что больше не отвлекает, и это только в начале!</p>
+    <p>Результат после применения способствует очищению организма от токсинов и интенсивному насыщению кислородом. Он укрепляет иммунную систему и предотвращает различные аутоиммунные заболевания. Помогает облегчить боль и скованность мышц и суставов. Вы сможете двигаться лучше и безболезненно. Всего через 1 месяц восстановления употребления будут <strong>избавлены от боли, которая будет длиться вечно!</strong></p>
+    <p>Этот продукт считается надежным продуктом, поскольку он был протестирован на эффективность. через все исследования получить необходимые сертификаты и оценка Совета Специалисты рекомендуют этот продукт всем.</p>
+    <p><img src="{% static 'img/23.jpeg' %}" alt="" class="custom-slider-img" style="width: 100%;"></p>
+    <p>Состав препарата действительно состоит из натуральных природных компонентов таких как  потому и безвредный Поэтому специалисты рекомендуют всем вам использовать препарат <strong>Артикулин</strong>
+                    для реабилитации суставных болей, эффективность компонентов которой подтверждена. Кроме того, впервые выбраны самые важные экстракты в одном продукте!</p>
+    <p style="margin: auto;"><strong>1-я неделя</strong> . При применении препарата для суставов было достигнуто в среднем 8-минутное облегчение боли, инициация процесса восстановления 41 типов болезней суставов. Эффективные компоненты инициируют восстановительные процессы в тканях организма.</p>
+    <p style="margin: auto;"><strong>2 неделя</strong> – Воспаление суставов и мышц полностью исчезло. Порошок запускает в организм все необходимые микроэлементы в организм и они глубоко впитываются в точку на клеточном уровне. Борьба с воспалениями, отеками</p>
+    <p style="margin: auto;"><strong>3 неделя </strong> – Двигайтесь лучше и безболезненно. Организм полностью восстановится. Вы почувствуете, что суставы Приведите себя в форму, снова почувствуйте прилив сил.</p>
+    <p style="margin: auto;"><strong>4 неделя </strong> – Устранение 41 вида болезней, боль и воспаление исчезают.</p>
+
+</div>
+
+{% endblock %}
+
+{% block separator2 %}
+<div class="container-fluid my-4">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="border-bottom"></div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            {% include './block/feedback_form.html' %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content2 %}
+<section class="product-features" id="product-features">
+        <div class="container custom-container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 product-features-main-title">
+                    <div class="page-title text-center">
+                                                <h3 class="page-main-title mr-0">Состав</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-11 col-lg-6 col-xl-4 order-lg-2  order-xl-1">
+                    <div class="product-features-left">
+                        <div class="media mrt-0 flex-lg-row-reverse">
+                            <div class="product-features-img align-self-center pos-r">
+                                <img class="pos-center product-feature-image" src="{% static 'img/kol.png' %}" alt="product-features-icon">
+
+                            </div>
+                            <div class="media-body text-right">
+                                <h5 class="product-features-title mt-0">Коллаген</h5>
+                                <p class="product-features-content mr-0">это фибриллярный белок, который обеспечивает прочность и эластичность соединительных тканей.</p>
+                            </div>
+                        </div>
+                        <div class="media flex-lg-row-reverse">
+                            <div class="product-features-img align-self-center text-center">
+                            <div class="product-features-img align-self-center pos-r">
+                                <img class="pos-center product-feature-image" src="{% static 'img/s2.png' %}" alt="product-features-icon">
+                            </div>
+                            </div>
+                            <div class="media-body text-right">
+                                <h5 class="product-features-title mt-0">Масло хвои пихты</h5>
+                                <p class="product-features-content mr-0">Подобно клею, “связывает” ткани. Поврежденные участки восстанавливаются, прочность и эластичность сухожилий и связок</p>
+                            </div>
+                        </div>
+                        <div class="media flex-lg-row-reverse">
+                            <div class="product-features-img align-self-center text-center">
+                            <div class="product-features-img align-self-center pos-r">
+                                <img class="pos-center product-feature-image" src="{% static 'img/s3.png' %}" alt="product-features-icon">
+                            </div>
+                            </div>
+                            <div class="media-body text-right">
+                                <h5 class="product-features-title mt-0">Камфора</h5>
+                                <p class="product-features-content mr-0">Выводит из соединительных тканей соли. Поступает по кровяному руслу к клапанам сердца, хрящам, суставам и сухожилиям.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-11 col-lg-12 col-xl-4 text-center order-lg-1 order-xl-2 content-product-features-img">
+                    <img src="{% static 'img/artic.png' %}" class="img-fluid" alt="product features big img">
+                </div>
+                <div class="col-12 col-sm-10 col-md-11 col-lg-6 col-xl-4 order-lg-3 order-xl-3">
+                    <div class="product-features-right">
+                        <div class="media product-features-mr-lg-0 right-first-child">
+                            <div class="product-features-img align-self-center pos-r">
+<img class="pos-center product-feature-image" src="{% static 'img/s4.png' %}" alt="product-features-icon">
+                            </div>
+                            <div class="media-body">
+                                <h5 class="product-features-title mt-0">Розмарин</h5>
+                                <p class="product-features-content mr-0">Высокий эффект розмарина при лечении суставов объясняется активными веществами, входящими в его состав: селен, кремний, калий, марганец, цинк помогают при артрите и хондрозе позвоночника.</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="product-features-img align-self-center pos-r">
+<img class="pos-center product-feature-image" src="{% static 'img/s5.png' %}" alt="product-features-icon">
+                            </div>
+                            <div class="media-body">
+                                <h5 class="product-features-title mt-0">Гинкго билоба</h5>
+                                <p class="product-features-content mr-0">предотвращают биологическое разрушение адреналина и аскорбиновой кислоты. Обладают антиоксидантным эффектом и терпеноиды, медь, селен, калий, фосфор, которые тоже есть в составе листьев. Биофлавониды обладают кумулятивным эффектом, потому оказывают продолжительное воздействие.</p>
+                            </div>
+                        </div>
+                        <div class="media mrb-0">
+                            <div class="product-features-img align-self-center pos-r">
+<img class="pos-center product-feature-image" src="{% static 'img/ama.png' %}" alt="product-features-icon">
+                            </div>
+                            <div class="media-body">
+                                <h5 class="product-features-title mt-0">Семена Амаранта</h5>
+                                <p class="product-features-content mr-0">белок семян амаранта уникален по аминокислотному составу, он рассматривается как один из лучших белков растительного происхождения по соотношению незаменимых аминокислот</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
